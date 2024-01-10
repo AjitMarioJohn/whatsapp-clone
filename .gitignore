@@ -22,3 +22,8 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+package-lock.json
+whatsapp-clone-frontend/src/assets/.gitkeep
+whatsapp-clone-frontend/.vscode/extensions.json
+whatsapp-clone-frontend/.vscode/launch.json
+whatsapp-clone-frontend/.vscode/tasks.json
