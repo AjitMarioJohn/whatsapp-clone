@@ -13,11 +13,12 @@
 
 #chat-container {
     position: fixed;
+
     top: 0%;
     bottom: 0%;
     right: 0px;
     left: 0px;
-    
+
     margin: auto;
     width: 70%;
     height: 90%;
@@ -26,4 +27,57 @@
     box-shadow: -1px 1px 5px rgba(#333, 0.2);
     border-radius: 3px;
 
+    display: flex;
+    flex-direction: row;
+
+
+
+    #sidebar {
+        flex-basis: 30%;
+        border-right: 1px solid #e1e4e5;
+        display: flex;
+        flex-direction: column;
+
+        #sidebar-header {
+            flex-basis: 67px;
+            background-color: #eeeeee;
+
+        }
+
+        #sidebar-search-box {
+            flex-basis: 50px;
+            background-color: #fbfbfb;
+            border-bottom: 1px solid #e1e4e5;
+
+            align-items: center;
+            justify-content: right;
+
+            input {
+                width: calc(90% - 30px);
+                border: 1px solid #f7f7f7;
+                border-radius: 7px;
+                height: 70%;
+
+                padding-left: 30px;
+
+                color: #9a9a9a;
+
+                &::placeholder {
+                    color: #9a9a9a;
+                    font-weight: 100;
+                }
+            }
+        }
+
+        #no-conversation {
+            padding-top: 30px;
+            text-align: center;
+            color: #b9b9b9;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+
+
+    }
 }
